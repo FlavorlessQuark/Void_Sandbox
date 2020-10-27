@@ -9,7 +9,18 @@ void overload_sh(short a);
 void overload_l(long a);
 void overload_s(char *a);
 void overload_c(char a);
-void overload_mulint(int a)
+void overload_mulint(int a);
+
+typedef struct
+{
+	char character;
+	int intger;
+	char *str;
+	float decimal;
+	double decdouble;
+	void 	*voidptr;
+}			s_types;
+
 
 // void overload_s(char *a);
 
@@ -28,10 +39,9 @@ typedef struct _keyval
 {
 	char *str;
 	int val;
-}				_Pair
+}				_Pair;
 
 void *void_to_char_p();
 void *recv_empty(char *str);
-void *deref();
 
 #endif
