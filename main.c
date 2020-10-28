@@ -52,6 +52,18 @@ void ptrs()
 	printf("Original: %p , %s\t REcv %p , %s\n", recv, (char *)recv, empty, (char *)empty);// Original string adress doesn't change. The allocated adress differs
 }
 
+void casstest()
+{
+	char *abc = {"abc"};
+	void *ptr;
+	char *tmp = {"cedf"};
+	int b[] = {0,1};
+
+	int a;
+	ptr = tmp;
+	printf("%s %d\n",  (typeof(abc))(ptr), (typeof(a))(b[0]));
+}
+
 void structtest()
 {
 	s_types typetest;
@@ -82,5 +94,6 @@ int main()
 	// generics();
 	// voids();
 	// ptrs();
-	structtest();
+	// structtest();
+	casstest();
 }

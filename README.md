@@ -15,4 +15,6 @@ Testing type compatibility with buitilin compatible and trying to use struct as 
 Looks like that's going to be difficult, but to avoid nested generic, I can probably have one Generic and then a bunch of if else in a function.
 
 The problem stems from me trying to versimpify something that is complex by nature, I think.
-Still I will keep thinking for different ways to do this. 
+Still I will keep thinking for different ways to do this.
+
+Casting things to other things in a sort of abstract way, hopefully this paves the way for something useful
